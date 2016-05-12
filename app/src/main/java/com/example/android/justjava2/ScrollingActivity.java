@@ -11,7 +11,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 public class ScrollingActivity extends AppCompatActivity {
-    int quantity = 2;
+    int quantity = 20;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,31 +66,59 @@ public class ScrollingActivity extends AppCompatActivity {
 
 
 
+    private void  skills( ) {
+        displayMessages (quantity + 20);
+
+
+    }
+
+    public void dribbling(){
+
+        displayMessaged (quantity +20);
+
+    }
+
+    public void pace(){
+
+        displayMessagep(quantity -20);
+
+    }
+    public void shooting(){
+
+        displayMessagesh(quantity -20 ) ;
+
+    }
+
+
+
+
 
 
 
 
 
     /**
-     * This method displays the given text on the screen
-     * here are attributes displays.
-     */
-    private void displayMessages(String message) {
+         * This method displays the given text on the screen
+         * here are attributes displays.
+         */
+    private void displayMessages(int message) {
         TextView order_summary_text_view = (TextView) findViewById(R.id.edenskills_text_view);
         order_summary_text_view.setText(message);
     }
-    private void displayMessaged(String message) {
+    private void displayMessaged(int message) {
         TextView order_summary_text_view = (TextView) findViewById(R.id.edendribbling_text_view);
         order_summary_text_view.setText(message);
     }
-    private void displayMessagep(String message) {
+    private void displayMessagep(int message) {
         TextView order_summary_text_view = (TextView) findViewById(R.id.edenpace_text_view);
         order_summary_text_view.setText(message);
     }
-    private void displayMessagesh(String message) {
+    private void displayMessagesh(int message) {
         TextView order_summary_text_view = (TextView) findViewById(R.id.edenshooting_text_view);
         order_summary_text_view.setText(message);
     }
+
+
 
 }
 
