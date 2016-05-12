@@ -8,8 +8,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class ScrollingActivity extends AppCompatActivity {
+    int quantity = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,4 +63,37 @@ public class ScrollingActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
+
+
+
+
+
+
+    /**
+     * This method displays the given text on the screen
+     * here are attributes displays.
+     */
+    private void displayMessages(String message) {
+        TextView order_summary_text_view = (TextView) findViewById(R.id.edenskills_text_view);
+        order_summary_text_view.setText(message);
+    }
+    private void displayMessaged(String message) {
+        TextView order_summary_text_view = (TextView) findViewById(R.id.edendribbling_text_view);
+        order_summary_text_view.setText(message);
+    }
+    private void displayMessagep(String message) {
+        TextView order_summary_text_view = (TextView) findViewById(R.id.edenpace_text_view);
+        order_summary_text_view.setText(message);
+    }
+    private void displayMessagesh(String message) {
+        TextView order_summary_text_view = (TextView) findViewById(R.id.edenshooting_text_view);
+        order_summary_text_view.setText(message);
+    }
+
 }
+
+
+
+
