@@ -13,6 +13,11 @@ import android.widget.TextView;
 public class ScrollingActivity extends AppCompatActivity {
     int quantity = 20;
     int quantitym = 20;
+    int quantityc = 20;
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -97,10 +102,10 @@ public class ScrollingActivity extends AppCompatActivity {
      */
     public void submitOrder(View view) {
 
-        displayMessages("skills    :" + skills() );
-        displayMessaged("dribbing  :" + dribbling());
-        displayMessagesp("Pace     :" + pace()   );
-        displayMessagesh("Shooting :" + shooting());
+        displayMessages("SKILLS    :" + skills() );
+        displayMessaged("DRIBBLING  :" + dribbling());
+        displayMessagesp("PACE     :" + pace()   );
+        displayMessagesh("SHOOTING :" + shooting());
 
     }
 
@@ -228,6 +233,88 @@ public class ScrollingActivity extends AppCompatActivity {
     }
 
 
+
+
+    public int  skillsc() {
+        return  (quantitym- 1);
+
+
+    }
+
+    public int dribblingc(){
+
+        return  (quantitym);
+
+    }
+
+    public int pacec(){
+
+        return(quantitym-1);
+
+    }
+    public int shootingc(){
+
+        return(quantitym-1 ) ;
+
+    }
+
+
+
+
+
+
+    public void submitOrderc(View view) {
+
+        displayMessagecs("SKILLS    :" + skillsc() );
+        displayMessagecd("DRIBBLING  :" + dribblingc());
+        displayMessagecp("PACE     :" + pacec()   );
+        displayMessagecsh("SHOOTING :" + shootingc());
+
+    }
+
+
+
+
+
+    private void displayMessagecs(int message) {
+        TextView cskills_text_view = (TextView) findViewById(R.id.cskills_text_view);
+        cskills_text_view.setText(message);
+    }
+
+    private void displayMessagecs(String message) {
+        TextView cskills_text_view = (TextView) findViewById(R.id.cskills_text_view);
+        cskills_text_view.setText(message);
+    }
+
+    private void displayMessagecd(int message) {
+        TextView cdribbling_text_view = (TextView) findViewById(R.id.cdribbling_text_view);
+        cdribbling_text_view.setText(message);
+    }
+
+    private void displayMessagecd(String message) {
+        TextView messidribbling_text_view = (TextView) findViewById(R.id.cdribbling_text_view);
+        messidribbling_text_view.setText(message);
+    }
+
+    private void displayMessagecp(int message) {
+        TextView cpace_text_view = (TextView) findViewById(R.id.cpace_text_view);
+        cpace_text_view.setText(message);
+    }
+
+    private void displayMessagecp(String message) {
+        TextView cpace_text_view = (TextView) findViewById(R.id.cpace_text_view);
+        cpace_text_view.setText(message);
+    }
+
+    private void displayMessagecsh(int message) {
+        TextView cshooting_text_view = (TextView) findViewById(R.id.cshooting_text_view);
+        cshooting_text_view.setText(message);
+    }
+
+    private void displayMessagecsh(String message) {
+        TextView cshooting_text_view = (TextView) findViewById(R.id.cshooting_text_view);
+        cshooting_text_view.setText(message);
+    }
 
 
 
