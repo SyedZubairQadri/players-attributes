@@ -85,14 +85,27 @@ public class ScrollingActivity extends AppCompatActivity {
 
     public int pace(){
 
-        return(quantity -1);
+        return(quantity -2);
 
     }
     public int shooting(){
 
-        return(quantity -1 ) ;
+        return(quantity -3 ) ;
 
     }
+    public int strength(){
+     return (quantity -3);
+    }
+
+
+
+
+    public float totaledenhazard(){
+      int total= (skills()+dribbling()+pace()+shooting()+strength());
+    int percent = total* 100;
+    return percent /100       ;
+    }
+
 
 
 
@@ -102,10 +115,12 @@ public class ScrollingActivity extends AppCompatActivity {
      */
     public void submitOrder(View view) {
 
-        displayMessages("SKILLS    :" + skills() );
-        displayMessaged("DRIBBLING  :" + dribbling());
-        displayMessagesp("PACE     :" + pace()   );
-        displayMessagesh("SHOOTING :" + shooting());
+        displayMessages("SKILLS    :" +  skills() );
+        displayMessaged("DRIBBLING :" + dribbling());
+        displayMessagesp("PACE     :" +  pace()   );
+        displayMessagesh("SHOOTING :" +  shooting());
+        displayMessagest("Strength :" + strength()
+                    +"\nTotal: " +totaledenhazard()+"%");
 
     }
 
@@ -155,6 +170,15 @@ public class ScrollingActivity extends AppCompatActivity {
     private void displayMessagesh(String message) {
         TextView edenshooting_text_view = (TextView) findViewById(R.id.edenshooting_text_view);
         edenshooting_text_view.setText(message);
+
+    }private void displayMessagest(int message) {
+        TextView edenstrenght_text_view = (TextView) findViewById(R.id.edenstrenght_text_view);
+        edenstrenght_text_view.setText(message);
+    }
+
+    private void displayMessagest(String message) {
+        TextView edenstrenght_text_view = (TextView) findViewById(R.id.edenstrenght_text_view);
+        edenstrenght_text_view.setText(message);
     }
 
 
