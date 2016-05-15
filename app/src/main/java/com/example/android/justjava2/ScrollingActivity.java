@@ -29,7 +29,7 @@ public class ScrollingActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "it will do nothing", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "ponka", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -115,12 +115,12 @@ public class ScrollingActivity extends AppCompatActivity {
      */
     public void submitOrder(View view) {
 
-        displayMessages("SKILLS    :" +  skills() );
-        displayMessaged("DRIBBLING :" + dribbling());
-        displayMessagesp("PACE     :" +  pace()   );
-        displayMessagesh("SHOOTING :" +  shooting());
-        displayMessagest("Strength :" + strength()
-                    +"\nTotal: " +totaledenhazard()+"%");
+        displayMessages("SKILLS    : "  +skills() );
+        displayMessaged("DRIBBLING : "  +dribbling());
+        displayMessagesp("PACE     : "  +pace()   );
+        displayMessagesh("SHOOTING : "  +shooting());
+        displayMessagest("Strength : "  +strength()
+                    +"\n       Total: " +totaledenhazard()+"%");
 
     }
 
@@ -205,14 +205,28 @@ public class ScrollingActivity extends AppCompatActivity {
     public int shootingm(){
 
         return(quantitym-1 ) ;
-
     }
+    public int strenghtm() {
+
+        return (quantitym - 4);
+    }
+        public float totalmessi (){
+            int total= (skillsmessi()+dribblingm()+pacem()+shootingm()+strenghtm());
+            int percent = total* 100;
+            return percent /100       ;
+        }
+
+
+
     public void submitOrderm(View view) {
 
-        displayMessagemessis("SKILLS    :" + skillsmessi() );
+        displayMessagemessis("SKILLS     :" + skillsmessi() );
         displayMessagemessid("DRIBBLING  :" + dribblingm());
-        displayMessagemessip("PACE     :" + pacem()   );
-        displayMessagemessish("SHOOTING :" + shootingm());
+        displayMessagemessip("PACE       :" + pacem()   );
+        displayMessagemessish("SHOOTING  :" + shootingm());
+        displayMessagemessist("Strength  :" + strength()
+                              + "\n Total:" +totalcr7()+"%");
+
 
     }
 
@@ -255,44 +269,67 @@ public class ScrollingActivity extends AppCompatActivity {
         TextView messishooting_text_view = (TextView) findViewById(R.id.messishooting_text_view);
         messishooting_text_view.setText(message);
     }
+    private void displayMessagemessist(int message) {
+        TextView messistrength_text_view_text_view = (TextView) findViewById(R.id.messistrength_text_view);
+        messistrength_text_view_text_view.setText(message);
+    }
+
+    private void displayMessagemessist(String message) {
+        TextView messistrength_text_view = (TextView) findViewById(R.id.messistrength_text_view);
+        messistrength_text_view.setText(message);
+    }
+
 
 
 
 
     public int  skillsc() {
-        return  (quantitym- 1);
+        return  (quantityc- 2);
 
 
     }
 
     public int dribblingc(){
 
-        return  (quantitym);
+        return  (quantityc-2);
 
     }
 
     public int pacec(){
 
-        return(quantitym-1);
+        return(quantityc-1);
 
     }
     public int shootingc(){
 
-        return(quantitym-1 ) ;
+        return(quantityc-1 ) ;
 
     }
+    public int strenghtc(){
 
+        return (quantityc-1);
+    }
 
+    public float totalcr7(){
+        int total= (skillsc()+dribblingc()+pacec()+shootingc()+strenghtc());
+        int percent = total* 100;
+        return percent /100       ;
+    }
 
 
 
 
     public void submitOrderc(View view) {
 
-        displayMessagecs("SKILLS    :" + skillsc() );
-        displayMessagecd("DRIBBLING  :" + dribblingc());
-        displayMessagecp("PACE     :" + pacec()   );
-        displayMessagecsh("SHOOTING :" + shootingc());
+        displayMessagecs("SKILLS     : " + skillsc() );
+        displayMessagecd("DRIBBLING  : " + dribblingc());
+        displayMessagecp("PACE       : " + pacec()   );
+        displayMessagecsh("SHOOTING  : " + shootingc());
+        displayMessagecst("Strenght  : "+strenghtc()
+                    +     "\n Total  : " +totalcr7()+"%");
+
+
+
 
     }
 
@@ -340,7 +377,15 @@ public class ScrollingActivity extends AppCompatActivity {
         cshooting_text_view.setText(message);
     }
 
+    private void displayMessagecst(int message) {
+        TextView cstrenght_text_view = (TextView) findViewById(R.id.cstrenght_text_view);
+        cstrenght_text_view.setText(message);
+    }
 
+    private void displayMessagecst(String message) {
+        TextView cstrenght_text_view = (TextView) findViewById(R.id.cstrenght_text_view);
+        cstrenght_text_view.setText(message);
+    }
 
 
 
