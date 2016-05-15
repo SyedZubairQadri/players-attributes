@@ -97,8 +97,10 @@ public class ScrollingActivity extends AppCompatActivity {
      */
     public void submitOrder(View view) {
 
-        displayMessages("skills :"  + skills() );
-        displayMessaged("dribbing :" + dribbling());
+        displayMessages("skills    :" + skills() );
+        displayMessaged("dribbing  :" + dribbling());
+        displayMessagesp("Pace     :" + pace()   );
+        displayMessagesh("Shooting :" + shooting());
 
     }
 
@@ -130,7 +132,25 @@ public class ScrollingActivity extends AppCompatActivity {
         edendribbling_text_view.setText(message);
     }
 
+    private void displayMessagesp(int message) {
+        TextView edenpace_text_view = (TextView) findViewById(R.id.edenpace_text_view);
+        edenpace_text_view.setText(message);
+    }
 
+    private void displayMessagesp(String message) {
+        TextView edenpace_text_view = (TextView) findViewById(R.id.edenpace_text_view);
+        edenpace_text_view.setText(message);
+    }
+
+    private void displayMessagesh(int message) {
+        TextView edenshooting_text_view = (TextView) findViewById(R.id.edenshooting_text_view);
+        edenshooting_text_view.setText(message);
+    }
+
+    private void displayMessagesh(String message) {
+        TextView edenshooting_text_view = (TextView) findViewById(R.id.edenshooting_text_view);
+        edenshooting_text_view.setText(message);
+    }
 
 }
 

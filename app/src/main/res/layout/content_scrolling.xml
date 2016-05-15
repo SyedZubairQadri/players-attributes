@@ -30,6 +30,12 @@
             android:id="@+id/chelsea"
             android:src="@drawable/chelsea"
             android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hazard"
+            android:src="@drawable/hazard"
+            android:scaleType="centerCrop"/>
 
 
         <TextView
