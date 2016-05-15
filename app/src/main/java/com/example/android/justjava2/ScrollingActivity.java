@@ -67,25 +67,25 @@ public class ScrollingActivity extends AppCompatActivity {
 
 
     private int  skills( ) {
-       return  (quantity + 20);
+       return  (quantity - 2);
 
 
     }
 
     public int dribbling(){
 
-        return  (quantity +20);
+        return  (quantity - 2);
 
     }
 
     public int pace(){
 
-        return(quantity -20);
+        return(quantity -1);
 
     }
-    public int displayMessage(){
+    public int shooting(){
 
-        return(quantity -20 ) ;
+        return(quantity -1 ) ;
 
     }
 
