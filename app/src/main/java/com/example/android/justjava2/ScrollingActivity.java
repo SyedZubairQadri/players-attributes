@@ -24,7 +24,7 @@ public class ScrollingActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "It will do nothing :p", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "it will do nothing", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -66,32 +66,41 @@ public class ScrollingActivity extends AppCompatActivity {
 
 
 
-    private void  skills( ) {
-        displayMessages (quantity + 20);
+    private int  skills( ) {
+       return  (quantity + 20);
 
 
     }
 
-    public void dribbling(){
+    public int dribbling(){
 
-        displayMessaged (quantity +20);
-
-    }
-
-    public void pace(){
-
-        displayMessagep(quantity -20);
-
-    }
-    public void shooting(){
-
-        displayMessagesh(quantity -20 ) ;
+        return  (quantity +20);
 
     }
 
+    public int pace(){
+
+        return(quantity -20);
+
+    }
+    public int displayMessage(){
+
+        return(quantity -20 ) ;
+
+    }
 
 
 
+
+    /**
+     * This method is called when the order button is clicked.
+     */
+    public void submitOrder(View view) {
+
+        displayMessages("skills :"  + skills() );
+        displayMessaged("dribbing :" + dribbling());
+
+    }
 
 
 
@@ -105,17 +114,20 @@ public class ScrollingActivity extends AppCompatActivity {
         TextView order_summary_text_view = (TextView) findViewById(R.id.edenskills_text_view);
         order_summary_text_view.setText(message);
     }
+
+    private void displayMessages(String message) {
+        TextView order_summary_text_view = (TextView) findViewById(R.id.edenskills_text_view);
+        order_summary_text_view.setText(message);
+    }
+
     private void displayMessaged(int message) {
-        TextView order_summary_text_view = (TextView) findViewById(R.id.edendribbling_text_view);
-        order_summary_text_view.setText(message);
+        TextView edendribbling_text_view = (TextView) findViewById(R.id.edendribbling_text_view);
+        edendribbling_text_view.setText(message);
     }
-    private void displayMessagep(int message) {
-        TextView order_summary_text_view = (TextView) findViewById(R.id.edenpace_text_view);
-        order_summary_text_view.setText(message);
-    }
-    private void displayMessagesh(int message) {
-        TextView order_summary_text_view = (TextView) findViewById(R.id.edenshooting_text_view);
-        order_summary_text_view.setText(message);
+
+    private void displayMessaged(String message) {
+        TextView edendribbling_text_view = (TextView) findViewById(R.id.edendribbling_text_view);
+        edendribbling_text_view.setText(message);
     }
 
 
