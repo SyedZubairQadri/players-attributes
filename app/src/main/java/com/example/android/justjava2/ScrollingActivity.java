@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class ScrollingActivity extends AppCompatActivity {
     int quantity = 20;
-
+    int quantitym = 20;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -152,8 +152,86 @@ public class ScrollingActivity extends AppCompatActivity {
         edenshooting_text_view.setText(message);
     }
 
+
+
+
+
+    public int  skillsmessi() {
+        return  (quantitym- 1);
+
+
+    }
+
+    public int dribblingm(){
+
+        return  (quantitym);
+
+    }
+
+    public int pacem(){
+
+        return(quantitym-1);
+
+    }
+    public int shootingm(){
+
+        return(quantitym-1 ) ;
+
+    }
+    public void submitOrderm(View view) {
+
+        displayMessagemessis("SKILLS    :" + skillsmessi() );
+        displayMessagemessid("DRIBBLING  :" + dribblingm());
+        displayMessagemessip("PACE     :" + pacem()   );
+        displayMessagemessish("SHOOTING :" + shootingm());
+
+    }
+
+    private void displayMessagemessis(int message) {
+        TextView messiskills_text_view = (TextView) findViewById(R.id.messiskills_text_view);
+        messiskills_text_view.setText(message);
+    }
+
+    private void displayMessagemessis(String message) {
+        TextView messiskills_text_view = (TextView) findViewById(R.id.messiskills_text_view);
+        messiskills_text_view.setText(message);
+    }
+
+    private void displayMessagemessid(int message) {
+        TextView messidribbling_text_view = (TextView) findViewById(R.id.messidribbling_text_view);
+        messidribbling_text_view.setText(message);
+    }
+
+    private void displayMessagemessid(String message) {
+        TextView messidribbling_text_view = (TextView) findViewById(R.id.messidribbling_text_view);
+        messidribbling_text_view.setText(message);
+    }
+
+    private void displayMessagemessip(int message) {
+        TextView messipace_text_view = (TextView) findViewById(R.id.messipace_text_view);
+        messipace_text_view.setText(message);
+    }
+
+    private void displayMessagemessip(String message) {
+        TextView messipace_text_view = (TextView) findViewById(R.id.messipace_text_view);
+        messipace_text_view.setText(message);
+    }
+
+    private void displayMessagemessish(int message) {
+        TextView messishooting_text_view = (TextView) findViewById(R.id.messishooting_text_view);
+        messishooting_text_view.setText(message);
+    }
+
+    private void displayMessagemessish(String message) {
+        TextView messishooting_text_view = (TextView) findViewById(R.id.messishooting_text_view);
+        messishooting_text_view.setText(message);
+    }
+
+
+
+
+
+
+
 }
-
-
-
 
