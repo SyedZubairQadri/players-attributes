@@ -15,6 +15,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Skill that you want to add "
+            android:inputType="textCapWords" />
+
+
         <TextView
             android:id="@+id/eden_text_view"
             android:layout_width="match_parent"
@@ -87,6 +95,12 @@
             android:onClick="submitOrder"/>
 
 
+        <EditText
+            android:id="@+id/name_field_messi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Skill that you want to add "
+            android:inputType="textCapWords" />
 
 
         <TextView
@@ -158,6 +172,12 @@
             android:layout_gravity="center_horizontal"
             android:onClick="submitOrderm"/>
 
+        <EditText
+            android:id="@+id/name_field_cr7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Skill that you want to add "
+            android:inputType="textCapWords" />
 
 
         <TextView

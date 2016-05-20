@@ -5,9 +5,10 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class ScrollingActivity extends AppCompatActivity {
@@ -115,12 +116,20 @@ public class ScrollingActivity extends AppCompatActivity {
      */
     public void submitOrder(View view) {
 
+        EditText nameField = (EditText)findViewById(R.id.name_field);
+        String name = nameField.getText().toString();
+
+
+
         displayMessages("SKILLS    : "  +skills() );
         displayMessaged("DRIBBLING : "  +dribbling());
         displayMessagesp("PACE     : "  +pace()   );
         displayMessagesh("SHOOTING : "  +shooting());
         displayMessagest("Strength : "  +strength()
-                    +"\n       Total: " +totaledenhazard()+"%");
+                    +"\n    Total: " +totaledenhazard()+"%"+
+                      "\n   Skills:"+ name );
+
+
 
     }
 
@@ -220,12 +229,18 @@ public class ScrollingActivity extends AppCompatActivity {
 
     public void submitOrderm(View view) {
 
+        EditText nameFieldm = (EditText)findViewById(R.id.name_field_messi);
+        String name = nameFieldm.getText().toString();
+
+
+
         displayMessagemessis("SKILLS     :" + skillsmessi() );
         displayMessagemessid("DRIBBLING  :" + dribblingm());
         displayMessagemessip("PACE       :" + pacem()   );
         displayMessagemessish("SHOOTING  :" + shootingm());
         displayMessagemessist("Strength  :" + strength()
-                              + "\n Total:" +totalcr7()+"%");
+                              +"\n Total :" +totalmessi()+"%"+
+                               "\n Skills :"+name );
 
 
     }
@@ -321,12 +336,19 @@ public class ScrollingActivity extends AppCompatActivity {
 
     public void submitOrderc(View view) {
 
+
+        EditText nameFieldc = (EditText)findViewById(R.id.name_field_cr7);
+        String name = nameFieldc.getText().toString();
+
+
+
         displayMessagecs("SKILLS     : " + skillsc() );
         displayMessagecd("DRIBBLING  : " + dribblingc());
         displayMessagecp("PACE       : " + pacec()   );
         displayMessagecsh("SHOOTING  : " + shootingc());
         displayMessagecst("Strenght  : "+strenghtc()
-                    +     "\n Total  : " +totalcr7()+"%");
+                    +     "\n Total  : " +totalcr7()+"%"+
+                          "\n Skills : " +name);
 
 
 
