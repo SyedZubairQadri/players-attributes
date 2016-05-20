@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -119,6 +120,9 @@ public class ScrollingActivity extends AppCompatActivity {
         EditText nameField = (EditText)findViewById(R.id.name_field);
         String name = nameField.getText().toString();
 
+        CheckBox fav = (CheckBox)findViewById(R.id.favourite);
+        boolean favr = fav.isChecked();
+
 
 
         displayMessages("SKILLS    : "  +skills() );
@@ -127,7 +131,10 @@ public class ScrollingActivity extends AppCompatActivity {
         displayMessagesh("SHOOTING : "  +shooting());
         displayMessagest("Strength : "  +strength()
                     +"\n    Total: " +totaledenhazard()+"%"+
-                      "\n   Skills:"+ name );
+                      "\n   Skills:"+ name+
+                      "\n Yes Eden Is My Favourrite Player In The World" + favr   );
+
+
 
 
 
@@ -348,7 +355,8 @@ public class ScrollingActivity extends AppCompatActivity {
         displayMessagecsh("SHOOTING  : " + shootingc());
         displayMessagecst("Strenght  : "+strenghtc()
                     +     "\n Total  : " +totalcr7()+"%"+
-                          "\n Skills : " +name);
+                          "\n Skills : " +name)
+                                            ;
 
 
 
