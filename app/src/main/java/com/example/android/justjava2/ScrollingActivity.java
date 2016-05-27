@@ -74,7 +74,7 @@ public class ScrollingActivity extends AppCompatActivity {
 
 
     private int  skills( ) {
-       return  (quantity - 2);
+        return  (quantity - 2);
 
 
     }
@@ -96,16 +96,16 @@ public class ScrollingActivity extends AppCompatActivity {
 
     }
     public int strength(){
-     return (quantity -3);
+        return (quantity -3);
     }
 
 
 
 
     public float totaledenhazard(){
-      int total= (skills()+dribbling()+pace()+shooting()+strength());
-    int percent = total* 100;
-    return percent /100       ;
+        int total= (skills()+dribbling()+pace()+shooting()+strength());
+        int percent = total* 100;
+        return percent /100       ;
     }
 
 
@@ -130,9 +130,9 @@ public class ScrollingActivity extends AppCompatActivity {
         displayMessagesp("PACE     : "  +pace()   );
         displayMessagesh("SHOOTING : "  +shooting());
         displayMessagest("Strength : "  +strength()
-                    +"\n    Total: " +totaledenhazard()+"%"+
-                      "\n   Skills:"+ name+
-                      "\n Yes Eden Is My Favourrite Player In The World" + favr   );
+                +"\n    Total: " +totaledenhazard()+"%"+
+                "\n   Skills:"+ name+
+                "\n Yes Eden Is My Favourrite Player In The World" + favr   );
 
 
 
@@ -145,9 +145,9 @@ public class ScrollingActivity extends AppCompatActivity {
 
 
     /**
-         * This method displays the given text on the screen
-         * here are attributes displays.
-         */
+     * This method displays the given text on the screen
+     * here are attributes displays.
+     */
     private void displayMessages(int message) {
         TextView order_summary_text_view = (TextView) findViewById(R.id.edenskills_text_view);
         order_summary_text_view.setText(message);
@@ -226,11 +226,11 @@ public class ScrollingActivity extends AppCompatActivity {
 
         return (quantitym - 4);
     }
-        public float totalmessi (){
-            int total= (skillsmessi()+dribblingm()+pacem()+shootingm()+strenghtm());
-            int percent = total* 100;
-            return percent /100       ;
-        }
+    public float totalmessi (){
+        int total= (skillsmessi()+dribblingm()+pacem()+shootingm()+strenghtm());
+        int percent = total* 100;
+        return percent /100       ;
+    }
 
 
 
@@ -239,6 +239,9 @@ public class ScrollingActivity extends AppCompatActivity {
         EditText nameFieldm = (EditText)findViewById(R.id.name_field_messi);
         String name = nameFieldm.getText().toString();
 
+        CheckBox fav = (CheckBox)findViewById(R.id.favouritemessi);
+        boolean favr = fav.isChecked();
+
 
 
         displayMessagemessis("SKILLS     :" + skillsmessi() );
@@ -246,8 +249,9 @@ public class ScrollingActivity extends AppCompatActivity {
         displayMessagemessip("PACE       :" + pacem()   );
         displayMessagemessish("SHOOTING  :" + shootingm());
         displayMessagemessist("Strength  :" + strength()
-                              +"\n Total :" +totalmessi()+"%"+
-                               "\n Skills :"+name );
+                +"\n Total :" +totalmessi()+"%"+
+                "\n Skills :"+name+
+                "\n Yes Messi Is My Favourrite Player In The World " + favr   );
 
 
     }
@@ -347,6 +351,10 @@ public class ScrollingActivity extends AppCompatActivity {
         EditText nameFieldc = (EditText)findViewById(R.id.name_field_cr7);
         String name = nameFieldc.getText().toString();
 
+        CheckBox fav = (CheckBox)findViewById(R.id.favouriteronaldo);
+        boolean favr = fav.isChecked();
+
+
 
 
         displayMessagecs("SKILLS     : " + skillsc() );
@@ -354,9 +362,9 @@ public class ScrollingActivity extends AppCompatActivity {
         displayMessagecp("PACE       : " + pacec()   );
         displayMessagecsh("SHOOTING  : " + shootingc());
         displayMessagecst("Strenght  : "+strenghtc()
-                    +     "\n Total  : " +totalcr7()+"%"+
-                          "\n Skills : " +name)
-                                            ;
+                +        "\n Total  : " +totalcr7()+"%"+
+                         "\n Skills : " +name+
+                         "\n Yes Ronaldo Is My Favourrite Player In The World " + favr);                                       ;
 
 
 

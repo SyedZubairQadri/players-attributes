@@ -108,6 +108,17 @@
             android:layout_gravity="center_horizontal"
             android:onClick="submitOrder"/>
 
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Messi is Your Favourite "
+            android:id="@+id/favouritemessi"
+            android:checked="false"
+            android:padding="20dp"
+            android:textSize="16sp" />
+
+
+
 
         <EditText
             android:id="@+id/name_field_messi"
@@ -185,6 +196,21 @@
             android:id="@+id/button2"
             android:layout_gravity="center_horizontal"
             android:onClick="submitOrderm"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ronaldo is Your Favourite "
+            android:id="@+id/favouriteronaldo"
+            android:checked="false"
+            android:padding="20dp"
+            android:textSize="16sp" />
+
+
+
+
+
+
 
         <EditText
             android:id="@+id/name_field_cr7"
